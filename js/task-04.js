@@ -1,16 +1,24 @@
 let counterValue = 0;
 const buttons = document.querySelector('#counter');
-
 const value = document.querySelector('#value');
-counterValue = value.textContent;
+
+function udateCounterValue() {
+    value.textContent = counterValue;
+}
 
 function onClick(event) {
 
     if(event.target.dataset.action === "increment") {
-        value.textContent++;
+        counterValue++;
+        udateCounterValue();
     } else {
-       --value.textContent;
+        --counterValue;
+       udateCounterValue();
     }
+    // if(counterValue <= 0) {
+    //     counterValue = 0;
+    //     udateCounterValue();
+    // }
    
 }
 
