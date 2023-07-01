@@ -10,8 +10,10 @@ function onBlur(event) {
     
     if(currentLength === minLength) {
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     } else {
         inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
     }
    
 }

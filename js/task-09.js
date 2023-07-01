@@ -12,7 +12,7 @@ function onClick() {
       .padStart(6, 0)}`;
   }
   body.style.backgroundColor = hexColor;
-  сolorSpan.textContent = body.style.backgroundColor;
+  сolorSpan.textContent = hexColor;
 }
 
 
